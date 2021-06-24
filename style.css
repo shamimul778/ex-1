@@ -1,0 +1,2333 @@
+/*-----------------------------------------------------------------------------------
+
+	Template Name: Version College
+	Template URI: http://coderitem.com
+	Description: This is Version College web site. 
+	Author: SA Bappy
+	Author URI: http://sabappy.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Header Area 
+	3. Iteam Area
+	4. Footer Area
+
+-----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------
+
+    font-family: Anton Regular, sans-serif;
+    font-family: Lato, sans-serif;
+
+-----------------------------------------------------------------------------------*/
+
+/*****************************************************/
+/**************    1. Typography   *******************/
+/*****************************************************/
+
+@font-face {
+    font-family: "Anton Regular";
+    src: url("fonts/Anton Regular.woff2") format("woff2"),
+        url("fonts/Anton Regular.woff") format("woff");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Light.woff2') format('woff2'),
+    url('fonts/Lato-Light.woff') format('woff'),
+    url('fonts/Lato-Regular.woff2') format('woff2'),
+    url('fonts/Lato-Regular.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    background: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Anton Regular";
+}
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Anton Regular, sans-serif;
+}
+p {
+    font-family: Lato, sans-serif;
+}
+
+img {
+    border: none;
+    max-width: 100%
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+	list-style: none;
+}
+button:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.justify-center {
+	justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.no-padding {
+    padding: 0;
+}
+.justify-start {
+	justify-content: flex-start;
+}
+.gap {
+	margin-top: 100px;
+}
+.gap-p {
+	padding-top: 50px;
+}
+.pt {
+	padding-top: 100px;
+}
+.np {
+    padding: 0;
+}
+.pad {
+    padding: 90px 0px;
+}
+
+  /*****************************************************/
+ /**************    2. Header Top Area   ****************/
+/*****************************************************/
+
+.header-top-area {
+    background: #6c6a77;
+    height: 30px;
+}
+.header-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 6;
+}
+.appoint {
+    margin-right: 10px;
+}
+.phn {
+    margin-left: 10px;
+}
+.appoint, .phn {
+    background: #fff;
+    border-radius: 34px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+    margin-top: 8px;
+}
+.appoint ul, .phn ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.appoint ul li, .phn ul li {
+    border-right: 1px solid #84d3d9;
+    margin: 8px 0;
+    padding: 5px 12px;
+}
+.appoint ul li:last-child, .phn ul li:last-child {
+    border: none;
+}
+.appoint ul li a, .phn ul li a {
+    color: #6c6a77;
+    font-size: 20px;
+    font-family: Anton Regular, sans-serif;
+}
+
+
+
+  /*****************************************************/
+ /**************    3. Hero Area     ******************/
+/*****************************************************/
+
+.hero-main-area {
+    background: url(img/hero/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-area {
+    text-align: center;
+    padding-top: 60px;
+}
+.menu-area ul li {
+    display: inline-block;
+    border-right: 1px solid #000;
+}
+.menu-area ul li:last-child {
+    border: none;
+}
+.menu-area ul li a {
+    text-transform: uppercase;
+    color: #000;
+    padding: 0px 16px;
+    font-family: Lato, sans-serif;
+}
+.hro-1 {
+    width: 50%;
+    margin-left: 170px;
+    margin-top: 30px;
+}
+.hro-2 {
+    width: 26%;
+    margin-left: -130px;
+    margin-top: -197px;
+}
+.company-area {
+    background: #F3F3F4;
+    margin-top: 10px;
+}
+.company {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    grid-gap: 10px;
+}
+.c {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(108, 106, 119, 0.15);
+}
+
+
+  /*****************************************************/
+ /**************    4. About Area  ****************/
+/*****************************************************/
+
+.about-main-area {
+    background: #F7F7F8;
+}
+.about-imgs {
+    float: right;
+    width: 80%;
+}
+.agency {
+    background: #6c6a77;
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    float: right;
+    margin-right: 50px;
+}
+.agency-1 {
+    margin: 0 auto;
+    margin-right: 42px;
+    padding-top: 30px;
+    width: 58%;
+}
+.agency-2 {
+    margin-left: auto;
+    width: 50%;
+    padding: 25px 35px 30px 0px;
+}
+.about {
+    padding-top: 80px;
+}
+.abt-content {
+    background: #fff;
+    margin: 34px 0 0 -80px;
+    padding: 40px 36px 50px 55px;
+}
+.abt-content h2 {
+    font-size: 45px;
+    color: #69c2cb;
+    font-family: "Anton Regular", sans-serif;
+    text-transform: uppercase;
+}
+.abt-content span {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #6C6A77;
+    opacity: 0.5;
+    line-height: 26px;
+}
+.abt-content p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6A77;
+    font-weight: bold;
+    padding-top: 35px;
+}
+.abt-content a {
+    font-size: 18px;
+    letter-spacing: 0.09em;
+    line-height: 26px;
+    color: #6c6a77;
+    text-transform: uppercase;
+    font-family: "Anton Regular", sans-serif;
+    margin-top: 30px;
+    padding: 6px 8px 6px 0;
+    position: relative;
+    z-index: 9;
+}
+.abt-content a::after {
+    content: "";
+    width: 38%;
+    height: 35px;
+    display: block;
+    background: #efefef;
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.abt-content a:hover::after {
+    width: 100%;
+}
+.abt-content a img {
+    padding: 0 8px 0 12px;
+}
+
+
+
+  /*****************************************************/
+ /**************    5. Review Area  ****************/
+/*****************************************************/
+
+.review-main-area {
+    background: #6c6a77;
+}
+.top-reviews {
+    margin: 0 25px 0 -25px;
+}
+.top-review {
+    margin: 80px 0;
+    position: relative;
+}
+.top-review p {
+    background: #fff;
+    border: 10px solid #F7F7F7;
+    padding: 45px;
+    outline: 20px solid #fff;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #000;
+}
+.ggl-icon {
+    position: absolute;
+    top: -33px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-family: "Anton Regular", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.09em;
+    line-height: 14px;
+    color: #69c2cb;
+    text-align: center;
+    background: #fff;
+    text-transform: uppercase;
+    width: 25%;
+}
+.review {
+    padding: 10px 0;
+}
+.review-content {
+    margin-top: 122px;
+}
+.review-content h2 {
+    font-size: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+.review-content span {
+    width: 50px;
+    height: 1px;
+    background: #84d3d9;
+    display: block;
+    margin: 30px 0 14px;
+}
+.review-content h6 {
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 0.3em;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: lato;
+}
+.review-content p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    margin-top: 22px;
+}
+.review-content a {
+    font-family: "Anton Regular", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.09em;
+    line-height: 26px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 6px 8px 6px 0;
+    position: relative;
+    z-index: 9;
+}
+.review-content a::after {
+    width: 44%;
+    height: 35px;
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    z-index: -1;
+    transition: 0.5s;
+    content: "";
+    background: #efefef;
+    opacity: 0.14;
+}
+.review-content a:hover::after {
+    width: 100%;
+}
+.review-content a img {
+    padding: 0 8px;
+}
+
+
+  /*****************************************************/
+ /**************    6. Destiny Center Area  ****************/
+/*****************************************************/
+
+.destiny-center-main-area {
+    background: #fff;
+}
+.destiny-center-area {
+    padding: 80px 0;
+}
+.destiny-center {
+    padding: 10px 0;
+}
+.destiny-image {
+    margin: 0 -45px;
+}
+.destiny-content {
+    margin-left: 60px;
+    margin-top: 110px;
+}
+.destiny-content h2 {
+    font-size: 48px;
+    color: #6c6a77;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+.destiny-content span {
+    width: 50px;
+    height: 1px;
+    background: #84D3D9;
+    display: block;
+    margin: 30px 0 14px;
+}
+.destiny-content h6 {
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 0.3em;
+    color: #6C6A77;
+    text-transform: uppercase;
+    font-family: lato;
+}
+.destiny-content p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6A77;
+    margin-top: 22px;
+}
+.rvs {
+    flex-direction: row-reverse;
+}
+.reverse {
+    margin-left: -80px;
+    margin-top: 110px;
+    margin-right: 160px;
+}
+.destiny-image.rvrs {
+    margin-left: -80px;
+    margin-right: 10px;
+}
+
+
+  /*****************************************************/
+ /**************    7. Dental Service Area  ****************/
+/*****************************************************/
+
+.dental-service-main-area {
+    background: #fff;
+    position: relative;
+    z-index: 99;
+}
+.dental-service-main-area::before {
+    content: "";
+    width: 100%;
+    height: 595px;
+    display: block;
+    background: #007E90;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+}
+.dental-service-area {
+    padding-top: 135px;
+}
+.dental-service {
+    background: #fff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.16);
+}
+.dental {
+    padding: 80px 0;
+}
+.dental-content {
+    text-align: center;
+}
+.dental-content h2 {
+    font-family: "Anton Regular", sans-serif;
+    font-size: 50px;
+    color: #69c2cb;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.dental-content p {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    width: 75%;
+    margin: 0 auto;
+}
+.dental-cetegory {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 60px 140px 0;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.16);
+}
+.type {
+    padding: 40px 15px 45px 60px;
+    position: relative;
+}
+.type h6 {
+    font-family: "Anton Regular", sans-serif;
+    font-size: 22px;
+    color: #6c6a77;
+    padding-bottom: 40px;
+    margin-left: 50px;
+}
+.type p {
+    width: 220px;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
+    margin-bottom: 35px;
+}
+.rb {
+    border-right: 0.5px solid #69C2CB;
+    border-bottom: 0.5px solid #69C2CB;
+}
+.bl {
+    border-bottom: 0.5px solid #69C2CB;
+    border-left: 0.5px solid #69C2CB;
+}
+.tr {
+    border-top: 0.5px solid #69C2CB;
+    border-right: 0.5px solid #69C2CB;
+}
+.tl {
+    border-top: 0.5px solid #69C2CB;
+    border-left: 0.5px solid #69C2CB;
+}
+.dental-logo {
+    background: #84D3D9;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.symble {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+.type a {
+    padding: 10px;
+    font-size: 15px;
+    letter-spacing: 0.09em;
+    line-height: 26px;
+    color: #6c6a77;
+    font-family: "Anton Regular", sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 9;
+}
+.type a img {
+    padding-right: 10px;
+}
+.type a::after {
+    width: 30%;
+    height: 35px;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    z-index: -1;
+    transition: 0.5s;
+    content: "";
+    background: #efefef;
+}
+.type a:hover::after {
+    width: 100%
+}
+
+  /*****************************************************/
+ /**************    8. Invisalign Area  ****************/
+/*****************************************************/
+
+.Invisalign-main-area {
+    position: relative;
+    z-index: 2;
+}
+.Invisalign-main-area::before {
+    content: "";
+    width: 50%;
+    height: 350px;
+    display: block;
+    position: absolute;
+    z-index: -2;
+    background: url(img/bigstock-208051528.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+.Invisalign-main-area::after {
+    content: "";
+    width: 20%;
+    height: 350px;
+    position: absolute;
+    z-index: -2;
+    display: block;
+    background: url(img/invisalign-aligners.png);
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100% 100%;
+}
+.Invisalign {
+    background: #84D3D9;
+    width: 55%;
+    margin-left: auto;
+    padding: 21px 120px;
+    position: relative;
+}
+.Invisalign::before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background: #84D3D9;
+    left: 0%;
+    bottom: 100%;
+    z-index: 9;
+}
+.Invisalign::after {
+    content: "";
+    height: 40px;
+    width: 100%;
+    background: #84D3D9;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 9;
+}
+.Invisalign h2 {
+    font-size: 56px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.Invisalign p {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    margin-top: 30px;
+}
+.Invisalign a {
+    font-size: 18px;
+    letter-spacing: 0.09em;
+    line-height: 26px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    position: relative;
+    margin-top: 25px;
+}
+.Invisalign a img {
+    margin-right: 8px;
+}
+.Invisalign a::after {
+    width: 35%;
+    height: 35px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    z-index: 4;
+    transition: 0.5s;
+    content: "";
+    background: #fff;
+    opacity: 0.26;
+}
+.Invisalign a:hover::after {
+    width: 100%;
+}
+
+
+  /*****************************************************/
+ /**************    9. Before & After Area  ****************/
+/*****************************************************/
+
+.ba-main-area {
+    background: #F7F7F8;
+    padding: 120px 0;
+}
+.ba-content {
+    text-align: center;
+}
+.ba-content h2 {
+    font-size: 56px;
+    color: #6c6a77;
+    text-transform: uppercase;
+}
+.ba-content span {
+    width: 46px;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+    background: #707070;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.ba-content h6 {
+    font-family: Lato;
+    font-size: 22px;
+    letter-spacing: 0.3em;
+    color: #000;
+    text-transform: uppercase;
+}
+.ba-content p {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #000;
+    margin-top: 70px;
+}
+.ba-image {
+    margin-top: 75px;
+}
+.ba-demo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 7px;
+}
+.demos {
+    text-align: center;
+    margin-top: 65px;
+}
+.demos a {
+    font-size: 18px;
+    letter-spacing: 0.09em;
+    line-height: 26px;
+    color: #6c6a77;
+    text-transform: uppercase;
+    padding: 10px;
+    position: relative;
+    z-index: 9;
+}
+.demos a img {
+    padding-right: 8px;
+}
+.demos a::after {
+    width: 30%;
+    height: 35px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    z-index: -1;
+    transition: 0.5s;
+    content: "";
+    background: #efefef;
+    margin: auto;
+}
+.demos a:hover::after {
+    width: 100%;
+}
+
+
+
+  /*****************************************************/
+ /**************    10. Dental Implants Area  ****************/
+/*****************************************************/
+
+.dental-implants-main-area {
+    background: #fff;
+    position: relative;
+}
+.dental-implants-main-area::before {
+    content: "";
+    background: url(img/Group-769.png);
+    width: 14%;
+    height: 380px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+}
+.dental-implants-main-area::after {
+    content: "";
+    background: url(img/nie-wieder-ohne-ihr-lachen-scherg-karlstadt_.png);
+    width: 48%;
+    height: 380px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 0;
+    right: 0;
+}
+.dental-implants {
+    width: 54%;
+    margin-right: auto;
+    background: #84D3D9;
+    position: relative;
+    z-index: 4;
+    padding: 14px 110px;
+}
+.dental-implants::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    bottom: 100%;
+    left: 0;
+    background: #84D3D9;
+}
+.dental-implants::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    top: 100%;
+    left: 0;
+    background: #84D3D9;
+}
+.dental-implants h2 {
+    font-size: 56px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.dental-implants p {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    margin-top: 40px;
+    width: 77%;
+}
+.dental-implants a {
+    font-size: 18px;
+    letter-spacing: 0.09em;
+    line-height: 26px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    position: relative;
+    margin-top: 30px;
+}
+.dental-implants a img {
+    margin-right: 8px;
+}
+.dental-implants a::after {
+    width: 30%;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    z-index: 4;
+    transition: 0.5s;
+    content: "";
+    background: #fff;
+    opacity: 0.26;
+}
+.dental-implants a:hover::after {
+    width: 100%;
+}
+
+
+  /*****************************************************/
+ /**************    11. Chooice Area  ****************/
+/*****************************************************/
+
+.choice-main-area {
+    padding: 125px 0 130px;
+    background: url(img/Group-772.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.choice-head {
+    text-align: center;
+}
+.choice-head h2 {
+    font-size: 56px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.choice-head span {
+    width: 46px;
+    height: 1px;
+    background: #FFFFFF;
+    display: block;
+    margin: 25px auto 20px;
+}
+.choice-head h6 {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-size: 22px;
+    letter-spacing: 0.3em;
+    color: #fff;
+}
+.choice-head p {
+    margin-top: 70px;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+.choice-items {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 12px;
+    margin-top: 50px;
+}
+.item p {
+    font-family: Lato;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(108,106,119,0.10);
+    background-color: rgba(255,255,255,0.09);
+    padding: 15px;
+}
+.item p img {
+    margin-right: 10px;
+}
+
+
+  /*****************************************************/
+ /**************    12. Appointment Area  ****************/
+/*****************************************************/
+
+.contact-main-area {
+    background: #fff;
+    padding: 90px 0 70px;
+}
+.contact-head {
+    text-align: center;
+}
+.contact-head h2 {
+    font-size: 56px;
+    color: #6c6a77;
+    text-transform: uppercase;
+}
+.contact-head span {
+    width: 46px;
+    height: 1px;
+    background: #707070;
+    display: block;
+    margin: 25px auto 20px;
+}
+.contact-head h6 {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 0.3em;
+    color: #000;
+    text-transform: uppercase;
+}
+.main-contact {
+    text-align: center;
+    margin-top: 100px;
+}
+.main-contact form {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+}
+.main-contact form input {
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    line-height: 26px;
+    color: #202831;
+    text-transform: uppercase;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #cec6bf;
+}
+.main-contact form input:focus {
+    color: #202831;
+    border-bottom: 1px solid #000;
+}
+.main-contact button {
+    margin-top: 70px;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.09em;
+    line-height: 26px;
+    color: #6c6a77;
+    font-family: Anton Regular, sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 6;
+}
+.main-contact button img {
+    margin-right: 8px;
+}
+.main-contact button::after {
+    content: "";
+    width: 70%;
+    height: 35px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    z-index: -1;
+    transition: 0.5s;
+    background: #efefef;
+    margin: auto;
+}
+.main-contact button:hover::after {
+    width: 100%;
+}
+
+
+  /*****************************************************/
+ /**************    13. Location Area  ****************/
+/*****************************************************/
+
+.location-main-area {
+    background: #84D3D9;
+}
+.location {
+    padding: 80px 0 25px;
+}
+.location-content {
+    text-align: center;
+}
+.location-content h2 {
+    font-size: 56px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.location-content span {
+    width: 400px;
+    height: 1px;
+    background: #fff;
+    display: block;
+    margin: 50px auto;
+}
+.location-view {
+    padding: 0 31%;
+}
+.location-view li {
+    text-align: left;
+    margin-bottom: 15px;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+}
+.location-view li i {
+    padding-right: 30px;
+    color: #fff;
+    font-size: 20px;
+}
+.location-view li:last-child {
+    margin: 0;
+}
+
+
+  /*****************************************************/
+ /**************    12. Footer Area  ****************/
+/*****************************************************/
+
+.footer-main-area {
+    background: #6C6A77;
+    padding: 30px 0;
+}
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.media-contact ul {
+    display: flex;
+    color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.media-contact ul li {
+    margin: 0 10px;
+    background: #69C2CB;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.copyright-content p {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+}
+
+
+    /*       ABOUT PAGE HERE        */
+
+
+  /*****************************************************/
+ /**************    1. About Area  ****************/
+/*****************************************************/
+
+.banner-main-area {
+	background: url(img/banner.jpg);
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.banner {
+	text-align: center;
+	padding: 30px 0 40px;
+}
+
+
+  /*****************************************************/
+ /**************    2. Deler-ship Area  ****************/
+/*****************************************************/
+
+.dlr-top {
+    margin-top: 0;
+}
+
+
+  /*****************************************************/
+ /**************    3. Inner About Area  ****************/
+/*****************************************************/
+
+.inner-about-area {
+    overflow: hidden;
+}
+.inner-content {
+    background: #6C6A77;
+    padding: 110px 0px 110px 150px;
+}
+.inner-content-1 {
+    margin-left: 3px;
+}
+.inner-content-1 p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    width: 85%;
+    margin: 22px 0px;
+}
+.inner-content-1 span {
+    width: 80px;
+    height: 5px;
+    background: #69c2cb;
+    display: block;
+    margin-left: 3px;
+}
+.inner-head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.inner-head h2 {
+    background: #8d8b98;
+    font-size: 38px;
+    color: #fff;
+    padding: 41px 120px 41px 25px;
+}
+.reviews {
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.inner-logo {
+    margin-left: 4px;
+}
+.rvu {
+    margin-right: 210px;
+}
+.rvu i {
+    color: #FFB100;
+}
+.inner-content-2 {
+    margin-top: 40px;
+    margin-left: 3px;
+}
+.inner-logo-2 {
+    margin-right: 70px;
+}
+.inner-content-2 p {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    margin: 25px 0 20px;
+    width: 90%;
+}
+.inner-content-2 h6 {
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: -15px;
+}
+.inner-content-2 a {
+    font-family: "Anton Regular", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.09em;
+    line-height: 26px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 50px;
+    padding: 6px 8px 6px 0;
+    position: relative;
+    z-index: 9;
+}
+.inner-content-2 a img {
+    padding: 0 8px;
+}
+.inner-content-2 a::after {
+    content: "";
+    width: 44%;
+    height: 35px;
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    z-index: -1;
+    transition: 0.5s;
+    background: #efefef;
+    opacity: 0.14;
+}
+.inner-content-2 a:hover::after {
+    width: 100%;
+}
+.inner-image img {
+    object-fit: cover;
+    height: 892px;
+    width: 100%;
+}
+
+
+  /*****************************************************/
+ /**************    4. Self Explain Area Area  ****************/
+/*****************************************************/
+
+.self-explain-main-area {
+    position: relative;
+    z-index: 2;
+}
+.self-explain-main-area::before {
+    content: "";
+    background: url(img/Group-893.png);
+    width: 480px;
+    height: 780px;
+    position: absolute;
+    z-index: 9;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+}
+.self-explain-area {
+    padding-right: 50px;
+    padding-top: 90px;
+    margin-bottom: 40px;
+}
+.self {
+    margin-bottom: 30px;
+}
+.self h2 {
+    font-size: 35px;
+    color: #6c6a77;
+    margin-left: -50px;
+    margin-bottom: 30px;
+}
+.self h2 img {
+    width: 30px;
+    margin-right: 20px;
+}
+.self p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    margin: 20px 0;
+}
+.self span {
+    width: 150px;
+    height: 6px;
+    background: #69c2cb;
+    display: block;
+}
+.explain h2 {
+    font-size: 35px;
+    color: #6c6a77;
+    margin-left: -50px;
+    margin-bottom: 30px;
+}
+.explain h2 img {
+    width: 30px;
+    margin-right: 20px;
+}
+.explain p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    margin: 20px 0;
+}
+.explain ul {
+    margin-left: 20px;
+}
+.explain ul li {
+    font-size: 16px;
+    line-height: 34px;
+    color: #000;
+}
+.explain ul li img {
+    margin-right: 10px;
+}
+
+.exparience-contents {
+    background: #F7F7F7;
+    margin-right: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.exparience-photo {
+    flex-grow: 1;
+    width: 20%;
+}
+.exparience {
+    flex-grow: 10;
+    width: 20%;
+    padding-left: 50px;
+}
+.exparience p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+}
+.exparience ul {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.exparience ul li {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+}
+.exparience ul li img {
+    margin-right: 8px;
+}
+.exparience-text-area {
+    background: #69C2CB;
+    position: relative;
+    z-index: 2;
+}
+.exparience-text-area::before {
+    content: "";
+    position: absolute;
+    background: url(img/mouth.png);
+    background-repeat: no-repeat;
+    width: 48%;
+    height: 240px;
+    top: 0;
+    left: 13%;
+}
+.exparience-text {
+    width: 70%;
+    margin-left: auto;
+    margin-right: 40px;
+    padding: 250px 0 30px 0;
+}
+.exparience-text p {
+    font-family: Anton;
+    font-size: 20px;
+    line-height: 38px;
+    color: #fff;
+}
+
+  /*****************************************************/
+ /**************    5. Boutique Dental Area  ****************/
+/*****************************************************/
+
+.boutique-dental-main-area {
+    background: #fff;
+}
+.boutique-dental-area {
+    padding: 130px 0 80px;
+}
+.boutique-head {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 25px;
+}
+.boutique-head h2 {
+    font-size: 32px;
+    color: #6c6a77;
+    margin-left: -40px;
+    margin-bottom: 32px;
+}
+.boutique-head h2 img {
+    padding-right: 10px;
+    width: 6%;
+}
+.boutique-head p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+}
+.single-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #707070;
+    padding: 8px 0 8px 10px;
+}
+.single-add img {
+    margin-right: 40px;
+    width: 12%;
+}
+.single-add p {
+    font-family: "Anton Regular";
+    font-size: 22px;
+    line-height: 26px;
+    color: #69c2cb;
+}
+.boutique-content {
+    margin-top: -57px;
+}
+.boutique-last-content {
+    margin-top: 34px;
+}
+.boutique-last-content p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+}
+.boutique-image img {
+    height: 600px;
+    object-fit: cover;
+}
+
+  /*****************************************************/
+ /**************    6. Family Dentist Area  ****************/
+/*****************************************************/
+
+.family-dentist-area {
+    position: relative;
+    z-index: 2;
+}
+.family-dentist-area::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #6C6A77;
+    width: 100%;
+    height: 800px;
+}
+.family-dentist-area::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 800px;
+    left: 0;
+    background: #F7F7F7;
+    width: 100%;
+    height: 896px;
+}
+.family-dentist {
+    text-align: center;
+    padding: 80px 0;
+}
+.fd-header {
+    margin-bottom: 45px;
+}
+.fd-header h2 {
+    font-size: 35px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 36px;
+}
+.fd-header h2 img {
+    margin-right: 15px;
+}
+.fd-header p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+.fd-circle {
+    position: relative;
+    padding-top: 20px;
+    z-index: 2;
+}
+.fd-circle ul {
+    padding: 42px 0;
+}
+.fd-circle ul::before {
+    content: "";
+    position: absolute;
+    width: 754px;
+    height: 754px;
+    background: #AEECF0;
+    z-index: -1;
+    left: 0;
+    top: 20px;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 25px solid #fff;
+}
+.fd-circle ul::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #69C2CB;
+    width: 5px;
+    height: 100%;
+    top: -27px;
+}
+.fd-circle ul li {
+    background: #fff;
+    padding: 40px 110px 45px 100px;
+    border-radius: 100px;
+    max-width: 515px;
+    line-height: 28px;
+    border: 3px solid #B2DBDE;
+    text-align: left;
+    position: relative;
+}
+.fd-circle ul li:nth-child(2n+1) {
+    margin-left: auto;
+}
+.fd-circle ul li:nth-child(2n) {
+    margin-right: auto;
+}
+.fd-circle ul li:nth-child(2n+1)::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    border-radius: 100%;
+    border: 7px solid #84d3d9;
+    left: -58px;
+    z-index: 6;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.fd-circle ul li:nth-child(2n+1)::after {
+    content: "";
+    position: absolute;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid #B2DBDE;
+    border-right: 3px solid transparent;
+    border-left: 3px solid #B2DBDE;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -9px;
+}
+.fd-circle ul li:nth-child(2n)::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 100%;
+    border: 7px solid #84d3d9;
+    right: -58px;
+    z-index: 6;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.fd-circle ul li:nth-child(2n)::after {
+    content: "";
+    position: absolute;
+    border-top: 3px solid #B2DBDE;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid #B2DBDE;
+    border-left: 3px solid transparent;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: -9px;
+}
+.fd-circle::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    border: 12px solid #6C6A77;
+    transform: rotate(45deg);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+.fd-contents {
+    margin-top: 55px;
+}
+.fd-contents h2 {
+    font-size: 56px;
+    color: #69c2cb;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.fd-contents p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+    /*       Family Dentisty PAGE HERE        */
+
+
+  /*****************************************************/
+ /**************    1. Family Content Area  ****************/
+/*****************************************************/
+
+.family-content-main-area {
+	overflow: hidden;
+}
+.fc-text {
+	background: #6C6A77;
+	padding: 70px 50px 60px 120px;
+}
+.fc-text h2 {
+	font-size: 67px;
+	color: #69c2cb;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+.fc-text p {
+	font-size: 20px;
+	line-height: 32px;
+	color: #fff;
+}
+
+  /*****************************************************/
+ /**************    2. Cosmetic Dentistry Area  ****************/
+/*****************************************************/
+
+.cosmetic-dentistry-main-area {
+	background-color: #44c3cd;
+	background-repeat: no-repeat;
+}
+.cosmetic-dentistry-area {
+    background-image: url(img/Group-893.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 21% 100%;
+}
+.cosmetic-dentistry::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background: url(img/smile.png);
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.cosmetic-dentistry {
+    padding: 180px 0 60px;
+    position: relative;
+}
+.cosmetic-dentistry h2 {
+    font-size: 66px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: -45px;
+}
+.cosmetic-dentistry h2 img {
+    margin-right: 16px;
+}
+.cosmetic-dentistry p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+}
+
+  /*****************************************************/
+ /**************    3. All Service Area  ****************/
+/*****************************************************/
+
+.services-main-area {
+    background: #fff;
+}
+.s-head {
+    text-align: center;
+    margin: 35px 0 40px;
+}
+.s-items {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    align-items: center;
+}
+.single-item {
+    background: #6C6A77;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    transition: 0.5s;
+}
+.single-item:hover {
+    transform: scale(1.1);
+}
+.s-item {
+    width: 70px;
+    height: 70px;
+    background: #7BCBD2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.single-item p {
+    font-size: 22px;
+    line-height: 37px;
+    color: #fff;
+    font-family: "Anton Regular";
+    text-transform: capitalize;
+    margin-top: 25px;
+}
+.s-teeth {
+    text-align: center;
+    margin: 80px 0 40px;
+}
+.s-spcial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.s-invisalign, .s-implant {
+    background: #6C6A77;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    width: 540px;
+    transition: 0.5s;
+}
+.s-invisalign:hover, .s-implant:hover {
+    transform: scale(1.1);
+}
+.s-implant p, .s-invisalign p {
+    font-size: 44px;
+    line-height: 74px;
+    color: #fff;
+    font-family: Anton Regular, sans-serif;
+    text-transform: capitalize;
+}
+.s-invslgn, .s-inplnt {
+    width: 90px;
+    height: 90px;
+    background: #7BCBD2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-bottom: 40px;
+}
+.s-implants {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.ex-items {
+    margin: 120px 0;
+}
+.ex-item {
+    display: flex;
+    align-items: center;
+}
+.ex-item:nth-child(2n) {
+    justify-content: flex-end;
+}
+.ex-num {
+    background: linear-gradient(#f8f8f8 0%, #fff 100%);
+    width: 160px;
+    height: 190px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ex-num span {
+    position: relative;
+    font-size: 155px;
+    color: #fff;
+    font-family: Anton Regular, sans-serif;
+    text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+.ex-num span img {
+    position: absolute;
+    top: -120%;
+    left: 106%;
+}
+.ex-test-content {
+    width: 50%;
+    margin-left: 5px;
+}
+.ex-test-content a:hover {
+    text-decoration: none;
+}
+.ex-test-content a {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-family: Anton Regular, sans-serif;
+    color: #6c6a77;
+    text-decoration: underline;
+}
+.ex-test-content p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    margin-top: 15px;
+}
+
+  /*****************************************************/
+ /**************    4. Unlike denture Area  ****************/
+/*****************************************************/
+
+.unlike-denture-main-area {
+    background: url(img/service/implants.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.unlike-denture {
+    padding: 140px 0 290px 0;
+}
+.unlike-denture p {
+    font-size: 30px;
+    line-height: 60px;
+    text-align: left;
+    color: #a6f1f7;
+    font-family: Anton Regular, sans-serif;
+    width: 76%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.unlike-denture p img {
+    margin: 0 20px 0 -66px;
+    max-width: 36px;
+}
+  /*****************************************************/
+ /**************    5. Dental Implants Cost Area  ****************/
+/*****************************************************/
+
+.dental-implants-cost-main-area {
+    background: #fff;
+}
+.implants-cost {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.implants-cost-head {
+    margin-right: 50px;
+}
+.ic-head h2 {
+    font-size: 35px;
+    color: #6c6a77;
+    margin: 55px 0 25px;
+}
+.ic-head h2 img {
+    margin-right: 12px;
+}
+.ic-head p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    margin-left: 56px;
+}
+.ic-single-item {
+    margin-bottom: 30px;
+}
+.ic-single-item h6 {
+    font-size: 22px;
+    color: #6c6a77;
+    border-left: 10px solid #69C2CB;
+    padding: 40px;
+    padding-left: 58px;
+}
+.ic-items {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 80px 0 0 50px;
+}
+
+
+  /*****************************************************/
+ /**************    6. Ex Contents Area  ****************/
+/*****************************************************/
+
+.ex-contents-main-area {
+    background: url(img/service/Group-978.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 150px;
+}
+.ex-contents-area {
+    padding: 100px 0;
+}
+.ex-contents-area p {
+    font-family: Anton Regular, sans-serif;
+    font-size: 30px;
+    line-height: 60px;
+    color: #d2d5dc;
+    width: 79%;
+}
+.ex-contents-area p img {
+    margin: 0 30px 0 -66px;
+    max-width: 36px;
+}
+
+  /*****************************************************/
+ /**************    7. Family Dentist Area  ****************/
+/*****************************************************/
+
+.dental-emergency-main-area {
+    background: url(img/service/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 150px;
+}
+.de-content {
+    padding: 120px 0;
+}
+.de-content p {
+    font-family: Anton Regular, sans-serif;
+    font-size: 30px;
+    line-height: 60px;
+    color: #d2d5dc;
+    width: 64%;
+}
+.de-content p img {
+    margin: 0 30px 0 -66px;
+    max-width: 36px;
+}
+
+  /*****************************************************/
+ /**************    8. Cosmetic Dentist Area  ****************/
+/*****************************************************/
+
+.cosmetic-dentist-main-area {
+    background-color: #6C6A77;
+    padding: 90px 0;
+}
+.cd-head {
+    text-align: center;
+}
+.cd-head h2 {
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.cd-head h2 img {
+    margin-right: 16px;
+}
+.cd-head p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+.cd-single-item {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    padding: 60px 0px 35px;
+    transition: 0.5s;
+}
+.cd-single-item:hover {
+    transform: scale(1.1);
+}
+.cd-items {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    padding: 50px 0;
+}
+.bdr {
+    border-radius: 100%;
+    background: linear-gradient(#64b8c1 0%, #84d3d9 100%);
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.cd-single-item h6 {
+    font-size: 22px;
+    line-height: 37px;
+    color: #6c6a77;
+}
+.cd-single-item p {
+    font-size: 15px;
+    line-height: 36px;
+    color: #6c6a77;
+}
+.curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.cd-foot p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+}
+
+  /*****************************************************/
+ /**************    9. Cosmetic Dentist Contents Area  ****************/
+/*****************************************************/
+
+.cosmetic-dentist-contents-main-area {
+    background: #fff;
+}
+.cosmetic-dentist-contents {
+    padding: 70px 0;
+}
+.cdc-1 h2 {
+    font-size: 35px;
+    color: #6c6a77;
+}
+.cdc-1 h2 img {
+    margin-right: 16px;
+}
+.cdc-1p {
+    padding-left: 55px;
+    margin: 36px 0;
+}
+.cdc-1p p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+}
+.cdc-1p ul {
+    margin: 45px 0 30px;
+}
+.cdc-1p ul li {
+    font-size: 16px;
+    line-height: 34px;
+    color: #000;
+}
+.cdc-1p ul li img {
+    margin-right: 16px;
+}
+.cdc-2 h2 {
+    font-size: 35px;
+    color: #6c6a77;
+}
+.cdc-2 h2 img {
+    margin-right: 16px;
+}
+.cdc-2 p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    padding-left: 55px;
+    margin-top: 36px;
+}
+
+  /*****************************************************/
+ /**************    10. Difference Dentist Area  ****************/
+/*****************************************************/
+
+.difference-dentist-main-area {
+    padding: 70px 0;
+    background: #fff;
+}
+.dd-text h2 {
+    font-size: 30px;
+    color: #6c6a77;
+    margin-bottom: 30px;
+}
+.dd-text p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.dd-text ul {
+    margin-bottom: 20px;
+}
+.dd-text ul li img {
+    margin-right: 10px;
+}
+.dd-text ul li a {
+    font-family: Lato;
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 34px;
+    color: #000;
+}
+.dd-text ul li a:hover {
+    text-decoration: none;
+}
+
+  /*****************************************************/
+ /**************    11. Contacts Area  ****************/
+/*****************************************************/
+
+.ex-contact-main-area {
+    background: #6C6A77;
+}
+.ec-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ec-logo {
+    width: 140px;
+    height: 140px;
+    background: #fff;
+    border: 3px solid #707070;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.ec-logo-area {
+    margin-top: -75px;
+}
+.ec-number a {
+    font-size: 24px;
+    color: #fff;
+}
+.ec-content p {
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+    margin-left: 90px;
+    padding: 50px 0;
+}
+
+
+    /*       TREATMENT PAGE HERE        */
+
+
+  /*****************************************************/
+ /**************    01. Heading Area  ****************/
+/*****************************************************/
+
+.t-heading-area {
+	background: #fff;
+}
+.t-head h2 {
+	font-size: 67px;
+	color: #69c2cb;
+	text-transform: uppercase;
+	margin-bottom: 48px;
+}
+.csmall-teerh h2 img {
+    margin-right: 16px;
+}
+.t-head p {
+	font-size: 16px;
+	line-height: 28px;
+	color: #000;
+}
+.t-head {
+	padding: 40px 0;
+}
+
+  /*****************************************************/
+ /**************    02. Small Teeth Operation Area  ****************/
+/*****************************************************/
+
+.csmall-teerh {
+    background: url(img/Group-978.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 110px 110px 110px 40px;
+}
+.csmall-teerh h2 {
+	font-size: 52px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.csmall-teerh p {
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+    padding-left: 60px;
+}
+
+  /*****************************************************/
+ /**************    03. Family Dentist Area  ****************/
+/*****************************************************/
+
+
+
+  /*****************************************************/
+ /**************    04. Family Dentist Area  ****************/
+/*****************************************************/
+
+
+
+  /*****************************************************/
+ /**************    05. Family Dentist Area  ****************/
+/*****************************************************/
+
+
+
+  /*****************************************************/
+ /**************    06. Family Dentist Area  ****************/
+/*****************************************************/
+
+
+
+
+  /*****************************************************/
+ /**************    07. Family Dentist Area  ****************/
+/*****************************************************/
+
+
+
+
+  /*****************************************************/
+ /**************    08. Family Dentist Area  ****************/
+/*****************************************************/
+
